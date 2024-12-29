@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق MNSPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f8fc;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4a90e2, #72b4f5);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4a90e2;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .features div {
+            text-align: center;
+        }
+        .features img {
+            max-width: 60%;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download a {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .download a:hover {
+            background-color: #72b4f5;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .responsive {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .features {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+
+            header img {
+                max-width: 120px; /* Smaller logo on mobile */
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .download a {
+                padding: 8px 16px;
+            }
+
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="شعار MNSPOS">
+        <h1>تطبيق MNSPOS</h1>
+        <p>إدارة مبيعاتك بسهولة واحترافية</p>
+    </header>
+    <nav>
+        <a href="#about">عن التطبيق</a>
+        <a href="#features">المميزات</a>
+        <a href="#download">تحميل</a>
+        <a href="#agents">وكلاؤنا</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <section id="about" class="responsive">
+        <h2>عن التطبيق</h2>
+        <p>تطبيق MNSPOS هو الحل المثالي لإدارة نقاط البيع، حيث يوفر واجهة سهلة الاستخدام وميزات متقدمة تساعدك على تحسين أداء عملك وزيادة أرباحك.</p>
+        <video controls width="100%">
+            <source src="promo.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </section>
+
+    <section id="features" class="responsive">
+        <h2>المميزات</h2>
+        <div class="features">
+            <div>
+                <p><strong>واجهة مستخدم سهلة:</strong> تصميم بسيط يسهل التنقل والاستخدام.</p>
+                <img src="1.png" alt="واجهة مستخدم سهلة">
+            </div>
+            <div>
+                <p><strong>تقارير متقدمة:</strong> احصل على رؤى دقيقة حول مبيعاتك.</p>
+                <img src="9.png" alt="تقارير متقدمة">
+            </div>
+            <div>
+                <p><strong>إدارة المخزون:</strong> متابعة دقيقة لمخزونك بسهولة.</p>
+                <img src="6.png" alt="إدارة المخزون">
+            </div>
+            <div>
+                <p><strong>دعم الطابعات وقارئ الباركود:</strong> يدعم الطابعات وقارئات الباركود الداخلية والخارجية.</p>
+                <img src="10.png" alt="دعم الطابعات وقارئ الباركود">
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="responsive">
+        <h2>تحميل</h2>
+        <div class="download">
+            <a href="https://drive.usercontent.google.com/download?id=1wQWwg3eLe_NzdlMPGG8x99rbrYNbmsbq&export=download&authuser=0" >تحميل نسخة الهاتف</a>
+            <a href="https://wzwoesvbheoukndtzapf.supabase.co/storage/v1/object/public/updates/Mns%20Setup.exe?t=2024-12-29T11%3A21%3A32.285Z">تحميل نسخة الكمبيوتر</a>
+        </div>
+    </section>
+
+    <section id="agents" class="responsive">
+        <h2>وكلاؤنا</h2>
+        <ul>
+            <li>الجزائر: +21367667732</li>
+            <li>العراق: 9647707077351</li>
+            <li>جميع دول العالم: +21367667732</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="responsive">
+        <h2>اتصل بنا</h2>
+        <p>تطبيق MNSPOS هو شريكك المثالي لإدارة أعمالك بكل احترافية. تواصل معنا عبر الأرقام التالية:</p>
+        <ul>
+            <li>هاتف:21367667732</li>
+            <li>بريد إلكتروني: MNSPO.Ssystem@gmail.com</li>
+        </ul>
+        <p>تابعنا على وسائل التواصل الاجتماعي:</p>
+        <div>
+            <a href="https://www.facebook.com/mnspos1">فيسبوك</a> |<a href="https://api.whatsapp.com/send/?phone=213676667732&text=">واتساب</a> | <a href="https://t.me/MNSPOS">تلغرام</a> | <a href="https://www.instagram.com/roufa.mns/profilecard/?igsh=MW1hNWs4MzE5OThwbg==">إنستغرام</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 تطبيق MNSPOS. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
